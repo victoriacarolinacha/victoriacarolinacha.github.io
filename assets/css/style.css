@@ -47,21 +47,27 @@ body{
     text-align: center;
 }
 .background__op{
-    width: 100%;
+    width: 70%;
     height: auto;
     z-index: -1;
     position: absolute;
     top: 18rem;
+    margin-left: 15%;
     display: flex;
-    justify-content: space-around;
-    margin: 0 auto;
     align-items: center;
+    justify-content: center;
 
     -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 2s; /* Firefox < 16 */
      -ms-animation: fadein 2s; /* Internet Explorer */
       -o-animation: fadein 2s; /* Opera < 12.1 */
          animation: fadein 2s;
+}
+.img__first{
+    margin-right: 4rem;
+}
+.img__look{
+    margin-left: 4rem;
 }
 .image__curriculum{
     -webkit-animation: fadein 1.5s; /* Safari, Chrome and Opera > 12.1 */
