@@ -97,6 +97,9 @@ body{
     height: auto;
     cursor: pointer;
 }
+.image__job-square{
+    width: 0%;
+}
 .menuao{
     position: absolute;
     right: 1rem;
@@ -138,6 +141,12 @@ body{
 .navbar__toggled-item:hover{
     background: #625750;
 }
+.modal-body img{
+    margin-bottom: 10px;
+}
+.modal-body img:last-of-type{
+    margin-bottom: 0;
+}
 @media(max-width: 600px){
     html{
         font-size: 12px;
@@ -156,39 +165,10 @@ body{
     .showproject{
         font-size: 2rem;
     }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media(max-width: 600px){
-    html{
-        font-size: 12px;
+    .image__job{
+        width: 0%;
+    }
+    .image__job-square{
+        width: 100%;
     }
 }
