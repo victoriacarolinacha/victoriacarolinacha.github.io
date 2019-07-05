@@ -486,7 +486,7 @@ body{
   position: absolute;
   top: 480px;
 }
-.hero__button:hover{
+.hero__button:hover, .hero__button-plus:hover{
   padding-left: 40px;
   padding-right: 40px;
 }
@@ -560,7 +560,7 @@ body{
   transition: all 0.3s ease-in;
   font-family: 'Cocogoose';
 }
-.portfolio__btn:hover{
+.portfolio__btn:hover{ 
   background: #bb695d;
 }
 .download__pura{
@@ -582,11 +582,95 @@ body{
     max-width: 80%;
   }
 }
+.img__perfil{
+  max-width: 320px;
+  margin: 0 auto;
+  margin-top: 32px;
+  animation-duration: 1s;
+  animation-name: opacity;
+}
+.perfil{
+  flex-direction: column;
+}
+.img__perfil img{
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
 
+.perfil__text{
+  font-family: 'Cocogoose';
+  font-size: 16px;
+  text-align: center;
+  margin: 32px 10px 0 10px;
+  animation-duration: 1s;
+  animation-name: opacity;
+}
+.hero__button-plus{
+  padding: 10px 32px;
+  background: #000;
+  color: white;
+  border: 0;
+  font-size: 22px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  font-family: 'Cocogoose';
+  position: absolute;
+  top: 920px;
+  margin-bottom: 70px;
+}
+@media only screen and (max-width: 760px){
+  .hero__button-plus{
+    top: 920px;
+  }
+}
+@media only screen and (max-width: 480px){
+  .hero__button-plus{
+    top: 990px;
+  }
+}
+
+@media only screen and (max-width: 320px){
+  .hero__button-plus{
+    top: 1020px;
+  }
+}
+
+.contact{
+  margin: 0 auto;
+  margin-top: 72px;
+  animation-duration: 1s;
+  animation-name: opacity;
+}
+.contact__text{
+  font-size: 48px;
+  line-height: 120%;
+  text-align: center;
+  padding-bottom: 10px;
+  font-family: 'Cocogoose';
+  transition: all 0.3s ease-in;
+}
+@media only screen and (max-width: 760px){
+  .contact__text{
+    font-size: 32px;
+  }
+}
+.social{
+  max-width: 50px;
+  margin: 0 20px;
+  text-align: center;
+}
+.social img{
+  max-width: 100%;
+  height: auto;
+}
+.social__logos{
+  display: flex;
+  justify-content: center;
+}
 .displayBlock{
   display: block;
 }
-
 .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */

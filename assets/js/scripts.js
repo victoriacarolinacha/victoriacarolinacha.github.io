@@ -1,5 +1,7 @@
-const divPiada = document.querySelector('.hero__text');
-const button = document.querySelector('.hero__button');
+const divPiada = document.querySelector('#heroText');
+const divCuriosidade = document.querySelector('#curiosidade');
+const button = document.querySelector('#heroBtn');
+const buttonCuriosidade = document.querySelector('#curiosidadeBtn');
 
 const piadas = [
   'Você sabia que ratos não vomitam?                             ',
@@ -48,7 +50,50 @@ const piadas = [
   'Você sabia que em Júpiter e Saturno chove diamante?',
   'Você sabia que na Austrália há mais cangurus que pessoas?',
 ];
+const curiosidades = [
+  'Meu animal preferido é o cachorro.',
+ 'Minha Winx favorita era a Tecna.',
+  'Minha cor preferida é o rosa. ',
+  'Sou uma pessoa bem humorada.' ,
+  'Minha comida preferida é o hambúrguer. ',
+  'No meu açaí, gosto de banana e nutella.',
+  'Não tenho um gênero musical preferido.',
+ ' Moro com a minha mãe, meu irmão e meu cachorro.',
+  'O nome do meu cachorro é San.',
+  'Meu filme preferido é Ratatouille.' ,
+  'Meu herói preferido da Marvel é o Hulk.',
+  'Minha heroína preferida é a Capitã Marvel.' ,
+  'Meu jogo favorito é Fire Emblem Awakening. ',
+  'Nunca saí do Paraná. ',
+  'Comecei a usar o Photoshop com nove anos.',
+  'Já quis cursar psicologia, física e história. ',
+  'Minha matéria preferida na escola era história.',
+  'Prefiro salgados a doces.',
+  'Meu filme favorito da Barbie é a Princesa da Ilha.',
+  'Minha carteira é no formato de um Husky.',
+  'Minha artista mais ouvida no Spotify é a Sunmi.',
+  'Sou descendente de coreanos do sul.',
+  'O primeiro jogo que joguei foi Adventure Quest.',
+  'No meu quintal moram quatro cachorros.',
+  'Dou nome para todos os cachorros que vejo na rua.',
+  'Se eu pudesse falar qualquer língua, seria o japonês.',
+  'Meu anime preferido é Death Note.',
+  'Raramente me assusto com filmes de terror.',
+  'Fui um ano adiantada na escola.',
+ ' Minha fruta favorita é o morango.',
+  'Já dormi por quatorze horas seguidas.',
+ ' Já tive pedra nos rins. ',
+  'Já fiz uma audição para uma empresa de kpop.',
+  'Se eu pudesse ter qualquer sotaque, seria o russo.',
+  'Nunca fui para a praia.',
+  'Já fui quase atropelada por um biarticulado.',
+  'Aprendi a ler com quatro anos.',
+  'Prefiro botas a tênis.',
+ 'Minha diva da infância era a Britney Spears.',
+  'Minha maquiagem favorita é o batom.',
+  'O melhor presente que já ganhei foi um churrasco.'
 
+];
 const buscarPiada = () =>{
   divPiada.classList.add('opacity-0');
   setTimeout(function(){
@@ -56,5 +101,15 @@ const buscarPiada = () =>{
     divPiada.classList.remove('opacity-0');
   }, 500);
 };
-
+const buscarCuriosidade = () =>{
+  divCuriosidade.classList.add('opacity-0');
+  setTimeout(function(){
+    divCuriosidade.innerText = curiosidades[(Math.random() * (40 - 1) + 1).toFixed()];
+    divCuriosidade.classList.remove('opacity-0');
+  }, 500);
+}
+if(button)
 button.addEventListener('click', buscarPiada);
+
+if(buttonCuriosidade)
+buttonCuriosidade.addEventListener('click', buscarCuriosidade);

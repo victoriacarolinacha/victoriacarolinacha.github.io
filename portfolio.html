@@ -36,15 +36,20 @@
   <title>Victoria Carolina Cha - Portfolio Digital</title>
 </head>
 <body>
-  <nav class="nav containerzinho"> 
-      <h1 class="nav__title">Victoria Cha</h1>
-      <ul class="nav__menu">
-        <li class="nav__item"><a href="index.html">sobre</a></li>
-        <li class="nav__item">portfólio</li>
-        <li class="nav__item">
-         <a href="contato.html">contato</a> </li>
-      </ul>
-  </nav>
+    <nav class="nav containerzinho">
+        <a href="index.html"><h1 class="nav__title">Victoria Cha</h1></a>
+        <ul class="nav__menu">
+          <li class="nav__item">
+              <a href="sobre.html">sobre</a>
+          </li>
+          <li class="nav__item">
+            <a href="portfolio.html">portfólio</a>
+          </li>
+          <li class="nav__item">
+            <a href="contato.html">contato</a>
+            </li>
+        </ul>
+    </nav>
 
   <section class="portfolio containerzinho">
     <div class="hovereffect img__portfolio" >
@@ -62,6 +67,10 @@
     <div class="hovereffect img__portfolio">
         <img src="/assets/img/spotify.jpg" alt="Job Itaú">
         <div class="overlay" style="cursor: pointer" data-toggle="modal" data-target="#spotifyModal"></div>
+    </div>
+    <div class="hovereffect img__portfolio">
+        <img src="./assets/img/folha.jpg" alt="Job Folha">
+        <div class="overlay" style="cursor: pointer" data-toggle="modal" data-target="#folhaModal"></div>
     </div>
   </section>
 
@@ -185,6 +194,36 @@
         </div>
       </div>
     </div>
+
+    <div class="modal fade" id="folhaModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body">
+                <img src="./assets/img/folha-01.jpg">
+                <img src="./assets/img/mockup01.jpg">
+                <img src="./assets/img/folha-02.jpg">
+                <img src="./assets/img/folha-03.jpg">
+                <img src="./assets/img/spotify-01.jpg">
+                <img src="./assets/img/spotify-02.jpg">
+            </div>
+            <div class="portfolio__text">
+                <p>Campanha institucional desenvolvida para a disciplina de Criação Publicitária, com o cliente Spotify. 
+                    Premiada com primeiro lugar na categoria Outdoor pelo PP Awards. 
+                </p>
+              </div>
+              <div class="portfolio__text">
+                <p>
+                    <span >Redação:</span> Victoria Cha, Ana Beatriz Fonseca<br>
+                  <span >Direção de arte:</span> Hadassa Marchiorato<br>
+                  <span >Equipe:</span> Ana Beatriz Fonseca, Hadassa Marchiorato, Kauanny Portes, Victoria Cha
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="portfolio__btn" data-dismiss="modal">Fechar</button>
+              </div>
+          </div>
+        </div>
+      </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
