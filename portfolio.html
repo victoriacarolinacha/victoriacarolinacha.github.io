@@ -7,6 +7,9 @@
   <link rel="stylesheet" href="./assets/css/styles.css"/>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <style>
+    a{
+      color: black;
+    }
     a:hover, a:visited{
       text-decoration: none;
       border: none;
@@ -24,11 +27,12 @@
       <ul class="nav__menu">
         <li class="nav__item"><a href="index.html">sobre</a></li>
         <li class="nav__item">portfólio</li>
-        <li class="nav__item">contato</li>
+        <li class="nav__item">
+         <a href="contato.html">contato</a> </li>
       </ul>
   </nav>
 
-  <section class="portfolio container">
+  <section class="portfolio containerzinho">
     <div class="hovereffect img__portfolio" >
         <img src="/assets/img/itau.jpg" alt="Job Itaú">
         <div class="overlay" style="cursor: pointer" data-toggle="modal" data-target="#itauModal"></div>
@@ -60,8 +64,18 @@
             <img src="./assets/img/itau-07.jpg">
             <img src="./assets/img/itau-08.jpg">
           </div>
+          <div class="portfolio__text">
+            <p>Campanha institucional realizada para a disciplina de Introdução à Publicidade para o cliente Itaú Mulher Empreendedora. </p>
+          </div>
+          <div class="portfolio__text">
+            <p>
+              <span >Redação:</span> Victoria Cha<br>
+              <span >Direção de arte:</span>  Victoria Cha, Hadassa Marchiorato<br>
+              <span >Equipe:</span> Ana Beatriz Fonseca, Hadassa Marchiorato, Kauanny Portes, Victoria Cha
+            </p>
+          </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="portfolio__btn" data-dismiss="modal">Fechar</button>
           </div>
         </div>
       </div>
@@ -76,9 +90,22 @@
               <img src="./assets/img/pura-03.jpg">
               <img src="./assets/img/pura-04.jpg">
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
+          <div class="portfolio__text">
+              <p class="download__pura">Download do catálogo completo</p>
+            </div>
+          <div class="portfolio__text">
+              <p>Catálogo de moda desenvolvido para a loja Pura Magia Teen (Campo Largo), em trabalho para as disciplinas de Fotografia e Computação Gráfica.</p>
+            </div>
+            <div class="portfolio__text">
+              <p>
+                <span>Diagramação:</span> Victoria Cha<br>
+                <span>Fotografia:</span> Hadassa Marchiorato e Kauanny Portes<br>
+                <span>Maquiagem:</span> Ana Beatriz Fonseca e Kauanny Portes<br>
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="portfolio__btn" data-dismiss="modal">Fechar</button>
+            </div>
         </div>
       </div>
     </div>
@@ -88,19 +115,29 @@
         <div class="modal-content">
           <div class="modal-body">
               <img src="./assets/img/livraria-01.jpg">
-              <img src="./assets/img/livraria-02.jpg">
-              <img src="./assets/img/livraria-08.jpg">
-              <img src="./assets/img/livraria-09.jpg">
-              <img src="./assets/img/livraria-10.jpg">
-              <img src="./assets/img/livraria-04.jpg">
-              <img src="./assets/img/livraria-05.jpg">
-              <img src="./assets/img/livraria-06.jpg">
-              <img src="./assets/img/livraria-07.jpg">
               <img src="./assets/img/livraria-03.jpg">
+              <img src="./assets/img/livraria-02.jpg">
+              <img src="./assets/img/livraria-04.jpg">
+              <img src="./assets/img/livraria-08.jpg">
+              <img src="./assets/img/livraria-05.jpg">
+              <img src="./assets/img/livraria-09.jpg">
+              <img src="./assets/img/livraria-06.jpg">
+              <img src="./assets/img/livraria-10.jpg">
+              <img src="./assets/img/livraria-07.jpg">
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
+          <div class="portfolio__text">
+              <p>Campanha institucional desenvolvida para a disciplina de Criação Publicitária para a Livraria Cultura.</p>
+            </div>
+            <div class="portfolio__text">
+              <p>
+                <span >Direção de arte:</span> Victoria Cha, Hadassa Marchiorato<br>
+                <span >Redação:</span> Victoria Cha, Rodrigo Macedo, Ana Beatriz Fonseca, Kauanny Portes<br>
+                <span >Equipe:</span> Ana Beatriz Fonseca, Hadassa Marchiorato, Kauanny Portes, Rodrigo Macedo, Victoria Cha
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="portfolio__btn" data-dismiss="modal">Fechar</button>
+            </div>
         </div>
       </div>
     </div>
@@ -116,9 +153,21 @@
               <img src="./assets/img/spotify-01.jpg">
               <img src="./assets/img/spotify-02.jpg">
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          </div>
+          <div class="portfolio__text">
+              <p>Campanha institucional desenvolvida para a disciplina de Criação Publicitária, com o cliente Spotify. 
+                  Premiada com primeiro lugar na categoria Outdoor pelo PP Awards. 
+              </p>
+            </div>
+            <div class="portfolio__text">
+              <p>
+                  <span >Redação:</span> Victoria Cha, Ana Beatriz Fonseca<br>
+                <span >Direção de arte:</span> Hadassa Marchiorato<br>
+                <span >Equipe:</span> Ana Beatriz Fonseca, Hadassa Marchiorato, Kauanny Portes, Victoria Cha
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="portfolio__btn" data-dismiss="modal">Fechar</button>
+            </div>
         </div>
       </div>
     </div>
