@@ -481,6 +481,8 @@ body{
   cursor: pointer;
   transition: all 0.3s ease-in;
   font-family: 'Cocogoose';
+  position: absolute;
+  top: 480px;
 }
 .hero__button:hover{
   padding-left: 40px;
