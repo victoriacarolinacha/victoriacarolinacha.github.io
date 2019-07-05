@@ -463,6 +463,8 @@ body{
   flex-direction: column;
   padding-top: 48px;
   max-width: 600px;
+  animation-duration: 1s;
+  animation-name: opacity;
 }
 .hero__text{
   font-size: 48px;
@@ -494,6 +496,9 @@ body{
     font-size: 32px;
     padding-bottom: 16px;
   }
+  .hero__button{
+    top: 400px;
+  }
 }
 
 
@@ -507,6 +512,18 @@ body{
   height: auto;
   margin: 20px;
   cursor: pointer;
+  opacity: 1;
+  animation-duration: 1s;
+  animation-name: opacity;
+}
+@keyframes opacity{
+  from{
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 .img__portfolio img{
   max-width: 100%;

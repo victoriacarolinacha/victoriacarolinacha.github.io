@@ -52,9 +52,9 @@ const piadas = [
 const buscarPiada = () =>{
   divPiada.classList.add('opacity-0');
   setTimeout(function(){
-    divPiada.innerHTML = piadas[(Math.random() * (piadas.length - 1) + 1).toFixed()];
+    divPiada.innerHTML = piadas[(Math.random() * (44 - 1) + 1).toFixed()];
     divPiada.classList.remove('opacity-0');
-  }, 500)
+  }, 500);
 };
 
 button.addEventListener('click', buscarPiada);
